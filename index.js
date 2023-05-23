@@ -1,1 +1,1 @@
-const c = 10;
+const x = 10;

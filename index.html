@@ -12,77 +12,91 @@
   <link rel="stylesheet" href="style.css" >
 </head>
 <body>
-<a href="#"><img id="logo" src="https://img2.freepng.ru/20180423/wlw/kisspng-soldier-computer-icons-military-salute-5ade61d71d3dc2.8402920815245234791198.jpg"></a>
-<h1>Hello fellow!</h1>
-<h2>This is a page where you are able to learn current information about mobilization in Ukraine!</h2>
-<form class="was-validated">
-<div class="input-group mb-3" id="first-div">
-  <label class="input-group-text" for="inputGroupSelect01">Specify the sex</label>
-  <select class="form-select" id="inputGroupSelect01" required aria-label="select your gender">
-    <option value="">Choose...</option>
-    <option value="1">Male</option>
-    <option value="2">Female</option>
-  </select>
-  <div class="invalid-feedback">Example invalid select your gender</div>
-</div>
-<div class="input-group mb-3" id="second-div">
-  <label class="input-group-text" for="inputGroupSelect02">Specify age</label>
-  <select class="form-select" id="inputGroupSelect02" required aria-label="select your age">
-    <option value="">Choose...</option>
-    <option value="1">up to 18</option>
-    <option value="2">18 to 60</option>
-  </select>
-  <div class="invalid-feedback">Example invalid select your age</div>
+<div class="row g-0">
+  <div class="col-sm-1 col-md-1"> <div id="logo"> </div> </div>
+  <div class="col-sm-2 col-md-6"> <h1>Hello fellow!</h1>  </div>
 </div>
 
-<div class="input-group mb-3" id="third-div">
-  <label class="input-group-text" for="inputGroupSelect03">Military rank</label>
-  <select class="form-select" id="inputGroupSelect03" required aria-label="select military rank">
-    <option value="">Choose...</option>
-    <option value="1">Military personnel under the age 40 who have combat experience and served in 2014</option>
-    <option value="2">Military who served before 2014</option>
-    <option value="3">Military who accomplished military department</option>
-    <option value="4">Citizens who have no age or physical restrictions on military service</option>
-    <option value="5">Citizens who have age or physical restrictions on military service</option>
-  </select>
-  <div class="invalid-feedback">Example invalid select military rank</div>
-</div>
+<div class="row g-0">
+<!--  <div class="col-6 col-md-8"><h1>Hello fellow!</h1>-->
+    <h2>This is a page where you are able to learn current information about mobilization in Ukraine!</h2>
+    <form class="was-validated">
+      <div class="input-group mb-3" id="gender-container">
+        <label class="input-group-text" for="inputGroupSelect01">Specify the sex</label>
+        <select class="form-select" id="inputGroupSelect01" required aria-label="select your gender">
+          <option value="">Choose...</option>
+          <option value="1">Male</option>
+          <option value="2">Female</option>
+        </select>
+        <div class="invalid-feedback">Example invalid select your gender</div>
+      </div>
+      <div class="input-group mb-3" id="age-container">
+        <label class="input-group-text" for="inputGroupSelect02">Specify age</label>
+        <select class="form-select" id="inputGroupSelect02" required aria-label="select your age">
+          <option value="">Choose...</option>
+          <option value="1">up to 18</option>
+          <option value="2">18 to 60</option>
+        </select>
+        <div class="invalid-feedback">Example invalid select your age</div>
+      </div>
 
-<div class="input-group mb-3" id="fourth-div">
-  <label class="input-group-text" for="inputGroupSelect04">Children</label>
-  <select class="form-select" id="inputGroupSelect04" required aria-label="select children">
-    <option value="">Choose...</option>
-    <option value="1">None</option>
-    <option value="2">1</option>
-    <option value="3">2</option>
-    <option value="4">3 or more</option>
-  </select>
-  <div class="invalid-feedback">Example invalid select amount of children</div>
-</div>
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
+      <div class="input-group mb-3" id="military-container">
+        <label class="input-group-text" for="inputGroupSelect03">Military rank</label>
+        <select class="form-select" id="inputGroupSelect03" required aria-label="select military rank">
+          <option value="">Choose...</option>
+          <option value="1">Military personnel under the age 40 who have combat experience and served in 2014</option>
+          <option value="2">Military who served before 2014</option>
+          <option value="3">Military who accomplished military department</option>
+          <option value="4">Citizens who have no age or physical restrictions on military service</option>
+          <option value="5">Citizens who have age or physical restrictions on military service</option>
+        </select>
+        <div class="invalid-feedback">Example invalid select military rank</div>
+      </div>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">The result is..</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="input-group mb-3" id="children-container">
+        <label class="input-group-text" for="inputGroupSelect04">Children</label>
+        <select class="form-select" id="inputGroupSelect04" required aria-label="select children">
+          <option value="">Choose...</option>
+          <option value="1">None</option>
+          <option value="2">1</option>
+          <option value="3">2</option>
+          <option value="4">3 or more</option>
+        </select>
+        <div class="invalid-feedback">Example invalid select amount of children</div>
       </div>
-      <div class="modal-body">
-        You are enrolled in the military!
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">The result is..</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              You are enrolled in the military!
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
+    </form>
   </div>
-</div>
-</form>
+
+
+
+
+<!--<div id="logo"> </div>-->
+<!--<img src="images/soldier.png" alt="Mobilization is around the corner">-->
+<!--<h1>Hello fellow!</h1>-->
+
 <!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: Bootstrap Bundle with Popper -->

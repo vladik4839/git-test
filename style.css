@@ -5,12 +5,18 @@ body {
 }
 #logo {
     display: inline-block;
-    margin: 15px; /* margin: 20px was off */
+    margin: 40px; /* margin: 20px was off */
     float: left;
-    height: 60px;
-    width: auto; /* correct proportions to specified height */
-    border-radius: 50%; /* makes it a circle */
+    height: 10px;
+    width: 10px; /* correct proportions to specified height */
     background-color: aliceblue;
+}
+
+div#logo {
+    width:87px;
+    height:50px;
+    background:url('images/asoldier.png');
+    background-repeat: no-repeat;
 }
 
 h1 { margin: 30px 200px; }
@@ -21,18 +27,18 @@ h2 {
     height: 15vh;
 }
 
-#first-div {
+#gender-container {
     width: 50%;
     place-items: center;
 }
-#second-div {
+#age-container {
     width: 50%;
 }
 
-#third-div {
+#military-container {
     width: 50%;
 }
 
-#fourth-div {
+#children-container {
     width: 50%
 }

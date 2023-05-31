@@ -1,38 +1,8 @@
 body {
     background-color: aliceblue;
     background-attachment: fixed;
-
-}
-#logo {
-    display: inline-block;
-    margin: 15px; /* margin: 20px was off */
-    float: left;
-    height: 60px;
-    width: auto; /* correct proportions to specified height */
-    border-radius: 50%; /* makes it a circle */
-    background-color: aliceblue;
 }
 
-h1 { margin: 30px 200px; }
-
-h2 {
-    display: grid;
-    place-items: center;
-    height: 15vh;
-}
-
-#first-div {
-    width: 50%;
-    place-items: center;
-}
-#second-div {
-    width: 50%;
-}
-
-#third-div {
-    width: 50%;
-}
-
-#fourth-div {
-    width: 50%
+.text-center {
+    text-align: center;
 }

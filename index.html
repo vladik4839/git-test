@@ -13,12 +13,12 @@
 </head>
 <body>
 
-<div class="container-fluid"> 
+<div class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">
+          <a class="MobUA-brand" href="#">
             <img src="images/asoldier.png" alt="logo">
           </a>          
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="MobUA-brand" href="#">MOB.UA</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -28,10 +28,10 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Mobilization Waves</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#">News</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -45,12 +45,18 @@
       <h1 class="text-center mb-5">Hello fellow!</h1>
       
       <h2 class="mb-5">This is a page where you are able to learn current information about mobilization in Ukraine!</h2>
+      <div id="marquee">
+        <marquee behavior="scroll" weight="150" loop="infinity" truespeed="200" scrolldelay="200" onmouseover="this.stop()" onmouseout="this.start()">
+          <div id='mylist' class='garage-title'></div>Today is the second wave of mobilization
+        </marquee>
+      </div>
+
       <form class="was-validated">
         
         <div class="row">
           <div class="col">
             <div class="input-group mb-3">
-              <label class="input-group-text" for="inputGroupSelect01">Specify the sex</label>
+              <label class="input-group-text" for="inputGroupSelect01">Specify sex</label>
               <select class="form-select" id="inputGroupSelect01" required aria-label="select your gender">
                 <option value="">Choose...</option>
                 <option value="1">Male</option>
@@ -69,6 +75,7 @@
                 <option value="">Choose...</option>
                 <option value="1">up to 18</option>
                 <option value="2">18 to 60</option>
+                <option value="3">25 to 60</option>
               </select>
               <div class="invalid-feedback">Example invalid select your age</div>
             </div>
